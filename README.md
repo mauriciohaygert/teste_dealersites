@@ -19,4 +19,4 @@ git, compose, docker, docker-compose
 ``docker exec app php artisan migrate``
 ``docker exec app php artisan db:seed``
 
-- Para acessar o site digite ``localhost`` no seu navegador
+- Para acessar o site digite ``[localhost](http://localhost)`` no seu navegador
