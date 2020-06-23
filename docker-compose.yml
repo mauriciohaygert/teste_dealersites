@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  app:
+    image: lorisleiva/laravel-docker
+    container_name: app
+    volumes:
+      - "./:/var/www"
+    working_dir: /var/www
+    command: php artisan serve --host=0.0.0.0 --port=8000
+    ports:
+      - 80:8000
+  mysql:
+    image: mysql:5.7.29
+    container_name: mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: dealersites
+      MYSQL_USER: dealersites
+      MYSQL_PASSWORD: jH%L8e2ujp&B
+      MYSQL_ROOT_PASSWORD: jH%L8e2ujp&B
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
