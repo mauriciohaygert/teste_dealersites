@@ -7,7 +7,7 @@ git, compose, docker, docker-compose
 ## Instruções:
 
 ### Faça o download do projeto
-- ``git clone``
+- ``git clone https://github.com/mauriciohaygert/teste_dealersites.git``
 ### Entre na pasta do projeto
 - ``cd teste_dealersites``
 ### Instalar as dependências
